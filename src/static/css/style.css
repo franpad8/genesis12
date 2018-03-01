@@ -1,0 +1,95 @@
+:root {
+	--blue: rgb(0, 113, 188);
+	--dark: rgb(82, 86, 89);
+	--light-green: rgb(178, 217, 244);
+	--dark-blue: rgb(28, 43, 124);
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	background-color: white;
+}
+
+header {
+	background-color: inherit;
+}
+
+#banner {
+	background: #222 url('../img/banner-bg.jpg') center center no-repeat;
+	background-size: cover;
+	height: 92.2vh;
+}
+
+#president {
+	background-color: var(--light-green);
+}
+
+#questions .list-group,
+#guidelines .list-group {
+	list-style-type: none;
+}
+
+#questions .list-group li,
+#guidelines .list-group li {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+#questions .list-group li:before,
+#guidelines .list-group li:before {
+	background-color: var(--light-green);
+	border-radius: 18px;
+	content: "";
+	height: 30px;
+	left: -45px;
+	position: absolute;
+	width: 30px;
+	
+}
+
+#guidelines .list-group li:before {
+	height: 20px;
+	width: 20px;
+	left: -30px;
+	top: 5px;
+}
+
+
+/* New Styles */
+.btn.btn-rounded-md {
+	border-radius: 25px;
+}
+
+.bg-dark-blue {
+	background-color: var(--dark-blue);
+}
+
+/* Bootstrap Overrides */
+
+.nav-link:hover {
+	border-bottom: 2px solid var(--blue);
+	padding-bottom: 1px;
+}
+
+.text-dark {
+	color: var(--dark) !important;	
+}
+
+.text-dark-blue {
+	color: var(--dark-blue) !important;	
+}
+
+.text-primary {
+	color: var(--blue) !important;
+}
+
+.btn-primary {
+	background-color: var(--blue);
+	border-color: var(--blue);
+}
