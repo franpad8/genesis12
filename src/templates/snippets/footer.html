@@ -1,0 +1,37 @@
+<hr>
+<footer>
+	<div class="container py-5 text-primary">
+		<div class="row">
+			<div class="col-12 d-flex flex-row justify-content-center">
+				<ul class="nav text-center">
+				  <li class="col-md-4 col-lg-2 nav-item active mr-0">
+			        <a class="nav-link text-primary{% if '/about' ==  request.path %} selected{% endif %}" href="{% url 'about' %}">ABOUT US<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="col-md-4 col-lg-2 nav-item mr-0">
+			        <a class="nav-link text-primary{% if '/fundraising' ==  request.path %} selected{% endif %}" href="{% url 'fundraising' %}">FUNDRAISING</a>
+			      </li>
+			      <li class="col-md-4 col-lg-2 nav-item mr-0">
+			        <a class="nav-link text-primary{% if '/e-fundraising' ==  request.path %} selected{% endif %}" href="{% url 'e-fundraising' %}">E-FUNDRAISING</a>
+			      </li>
+			      <li class="col-md-4 col-lg-2 nav-item mr-0">
+			        <a class="nav-link text-primary{% if '/faq' ==  request.path %} selected{% endif %}" href="{% url 'faq' %}">FAQ’s</a>
+			      </li>
+			      <li class="col-md-4 col-lg-2 nav-item mr-0">
+			        <a href="{% url 'charities' %}" class="nav-link text-primary{% if '/charities' ==  request.path %} selected{% endif %}">CHARITIES</a>
+			      </li>
+			      <li class="col-md-4 col-lg-2 nav-item mr-0">
+			        <a class="nav-link text-primary" href="{% url 'about' %}">CONTACT US</a>
+			      </li>
+				</ul>
+			</div>
+			<div class="col-12 row">
+				<div class="col-md-6"></div>
+				<div class="col-md-6 text-center mt-5">
+					<a href="#" class="text-primary"><i class="icon icon-lg ion-social-facebook mr-4"></i></a>
+			  	  	<a href="#" class="text-primary"><i class="icon icon-lg ion-social-googleplus mr-3"></i></a>
+			  	  	<a href="#" class="text-primary"><i class="icon icon-lg ion-social-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>	
+</footer>

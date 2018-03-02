@@ -1,0 +1,58 @@
+<div class="container py-3">
+	<div class="row d-block d-lg-none py-3">
+		<div class="col-12 contact text-primary">
+			<div class="text-center">
+	  	  	
+		  	  	<i class="icon ion-social-facebook mr-3"></i>
+		  	  	<i class="icon ion-social-googleplus mr-2"></i>
+		  	  	<i class="icon ion-social-twitter mr-2"></i>
+		        <i class="icon ion-ios-telephone ml-2 mr-2"></i><span class="text-primary position-relative" style="top:-.2rem;" href="#">+1 (832) 477-6261</span><i class="icon ion-ios-email-outline ml-2"></i>
+	      	
+	  		</div>
+		</div>	
+	</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light justify-content-around">
+	  <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>			  
+	  <div class="d-flex flex-column align-items-center text-primary text-right">
+	  	<div class="d-none d-lg-block">
+	  	  	
+	  	  	<a href="#" class="text-primary"><i class="icon ion-social-facebook mr-3"></i></a>
+	  	  	<a href="#" class="text-primary"><i class="icon ion-social-googleplus mr-2"></i></a>
+	  	  	<a href="#" class="text-primary"><i class="icon ion-social-twitter mr-2"></i></a>
+	        <i class="icon ion-ios-telephone ml-2 mr-2"></i><span class="text-primary position-relative" style="top:-.2rem;" href="#">+1 (832) 477-6261</span><i class="icon ion-ios-email-outline ml-2"></i>
+	      	
+	  	</div>
+
+		<button class="navbar-toggler position-relative" style="left: .5rem;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	
+	    <ul class="navbar-nav ml-auto text-center text-lg-right">
+	      <li class="nav-item active ml-3 mr-0">
+	        <a class="nav-link text-primary{% if '/about' ==  request.path %} selected{% endif %}" href="{% url 'about' %}">ABOUT US<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item ml-3 mr-0">
+	        <a class="nav-link text-primary{% if '/fundraising' ==  request.path %} selected{% endif %}" href="{% url 'fundraising' %}">FUNDRAISING</a>
+	      </li>
+	      <li class="nav-item ml-3 mr-0">
+	        <a class="nav-link text-primary{% if '/e-fundraising' ==  request.path %} selected{% endif %}" href="{% url 'e-fundraising' %}">E-FUNDRAISING</a>
+	      </li>
+	      <li class="nav-item ml-3 mr-0">
+	        <a class="nav-link text-primary{% if '/faq' ==  request.path %} selected{% endif %}" href="{% url 'faq' %}">FAQ’s</a>
+	      </li>
+	      <li class="nav-item ml-3 mr-0">
+	        <a href="{% url 'charities' %}" class="nav-link text-primary{% if '/charities' ==  request.path %} selected{% endif %}">CHARITIES</a>
+	      </li>
+	      <li class="nav-item ml-3 mr-0">
+	        <a class="nav-link text-primary" href="{% url 'about' %}">CONTACT US</a>
+	      </li>
+	    </ul>
+	  </div>
+	  </div>
+
+	  
+	</nav>
+	<hr>
+</div>

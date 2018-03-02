@@ -19,5 +19,11 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', TemplateView.as_view(template_name="index.html"), name="index"),
+    url(r'^$', TemplateView.as_view(template_name="index.html"), name="home"),
+    url(r'^charities$', TemplateView.as_view(template_name="charities.html"), name="charities"),
+    url(r'^about$', TemplateView.as_view(template_name="about.html"), name="about"),
+    url(r'^fundraising$', TemplateView.as_view(template_name="fundraising.html"), name="fundraising"),
+    url(r'^e-fundraising$', TemplateView.as_view(template_name="e-fundraising.html"), name="e-fundraising"),
+    url(r'^faq$', TemplateView.as_view(template_name="faq.html"), name="faq"),
+
 ]
