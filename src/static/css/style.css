@@ -104,6 +104,14 @@ header {
 	top: .2rem;
 }
 
+.icon {
+	font-size: 1.4rem;
+}
+
+.icon-lg {
+	font-size: 3rem;
+}
+
 
 /* New Utilities Styles */
 
@@ -121,9 +129,14 @@ header {
 
 /* Bootstrap Overrides */
 
-.nav-link:hover {
-	border-bottom: 2px solid var(--blue);
+.nav-link {
+	border-bottom: 2px solid transparent;
+	margin-bottom: 1rem;
 	padding-bottom: 1px;
+}
+
+.nav-link:hover {
+	border-color: var(--blue);
 }
 
 .text-dark {
