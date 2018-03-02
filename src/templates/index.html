@@ -7,22 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Genesis12</title>
 	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="contact float-right">
-				
+				<div class="col-12 contact text-center">
+					<ul class="navbar-nav d-block d-lg-none">
+				  		<li>
+				        	<p class="text-primary" href="#">+1 (832) 477-6261</p>
+				      	</li>
+				  	</ul>
 				</div>	
 			</div>
 			
 			<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-			  <a class="navbar-brand" href="#">Navbar</a>
-			  
+			  <a class="navbar-brand" href="#">Navbar</a>			  
 			  <div class="d-flex flex-column align-items-end">
-			  	<ul class="navbar-nav">
+			  	<ul class="navbar-nav d-none d-lg-block">
 			  		<li>
 			        <p class="text-primary" href="#">+1 (832) 477-6261</p>
 			      </li>
@@ -62,9 +66,10 @@
 	</header>
 	<div id="banner" class="container-fluid">
 		<div class="container text-center">
-			<h1 class="banner-title text-white pt-5">We help schools and nonprofit organizations nationwide
-in developing successful fundraising campaigns.</h1>
-			<button class="btn btn-lg btn-primary btn-rounded-md mt-5 px-5">LEARN ABOUT OUR E-FUNDRAISING</button>
+			<div class="row">
+				<h1 class="col-12 banner-title text-white pt-5 mt-5">We help schools and nonprofit organizations nationwide in developing successful fundraising campaigns.</h1>
+				<a href="#" class="col-12 col-lg-8 btn btn-lg btn-primary btn-rounded-md font-weight-bold mx-auto py-3 mt-5 px-5 text-white"><h1 class="h2">LEARN ABOUT OUR E-FUNDRAISING</h1></a>
+			</div>
 		</div>
 		
 	</div>
@@ -103,8 +108,8 @@ heights.</p>
 	<div id="president" class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3 col-md-3"></div>
-				<div class="col-sm-9 col-md-7">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-9 text-lg-left text-center">
 					<h3 class="mb-0 mt-5">Richard D. Raymond</h3>
 					<h4 class="mb-0">PRESIDENT</h4>
 					<p>Genesis 12 Marketing Group</p>
@@ -125,8 +130,8 @@ heights.</p>
 				<div class="col-sm-12 mb-4 text-dark text-center">
 					<h2 class="display-4">Ask Yourself these <b>Questions:</b></h3>
 				</div>
-				<div class="col-sm-5"></div>
-				<div class="col-xs-11 col-md-7">
+				<div class="col-12 col-lg-5"></div>
+				<div class="col-12 col-lg-7">
 					<ul class="list-group text-dark">
 					    <li><h4>Are you tired of fundraisers where you, the parent, do
 	all the work?</h4></li>
@@ -159,13 +164,13 @@ sold throughout the years, we continue to hear the same complaints: the coupon i
 purse, or, the coupon isn't good in my area. While the product was great, it just wasn't very user-friendly.
 Thank goodness for technology!</p>
 			   <div class="col-sm-12">
-			   		<div class="col-sm-4">
-			   			<h3 class="col-sm-12 h3 text-warning mt-5 text-right mb-3">Introducing MyEats&copy,</h3>
-			   			<p class="col-sm-12 font-weight-bold mt-0 text-right">a digital coupon book for your smartphone. Because nobody leaves home without their phone, you will always have an abundance of savings choices right in the palm of your hand.
+			   		<div class="col-lg-4 text-center text-lg-right">
+			   			<h3 class="col-sm-12 h3 text-warning mt-5 mb-3">Introducing MyEats&copy,</h3>
+			   			<p class="col-sm-12 font-weight-bold mt-0">A digital coupon book for your smartphone. Because nobody leaves home without their phone, you will always have an abundance of savings choices right in the palm of your hand.
 			   			</p>
 			   		</div>
-			   		<div class="col-sm-4"></div>
-			   		<div class="col-sm-4"></div>
+			   		<div class="col-lg-4"></div>
+			   		<div class="col-lg-4"></div>
 			   </div>
 			</div>
 			
@@ -194,20 +199,20 @@ Thank goodness for technology!</p>
 	<div id="myeats" class="container-fluid bg-dark-blue text-white py-5">
 		<div class="container">
 			<div class="row text-center">
-				<div class="col-sm-8">
+				<div class="col-lg-8">
 					<h2 class="text-warning mb-4">MyEats&copy,</h2>
-					<p class="col-sm-12 font-weight-bold mt-0">The MyEats® app has more than 20 of your favorite fast food
+					<p class="col-md-12 font-weight-bold mt-0">The MyEats® app has more than 20 of your favorite fast food
 restaurant chains on it. Each of them is making generous "free"
 offers to encourage consumers to support your school or nonprofit
 group (click here to see participating restaurant chains and their
 offers). Notice that we didn't say "discount". That is because every
 restaurant chain is offering "free items" with your purchase. Many
 of them even offer more than one coupon.</p>
-					<div class="col-xs-12 col-sm-10 btn btn-primary btn-lg btn-rounded-md">
+					<div class="col-xs-12 col-md-10 btn btn-primary btn-lg btn-rounded-md">
 						<div class="row">
 						<h4 class="col-sm-12 h2">Help an organization today!</h4>
-						<div class="col-sm-3"><h4 class="display-3 font-weight-bold">$20</h4></div>
-						<div class="col-sm-9">
+						<div class="col-lg-3"><h4 class="display-3 font-weight-bold">$20</h4></div>
+						<div class="col-lg-9">
 							<button class="col-sm-12 btn btn-warning btn-lg btn-rounded-md h-100">
 								<h1 class="text-dark-blue font-weight-bold">Buy Now!</h1>
 							</button>	
@@ -215,7 +220,7 @@ of them even offer more than one coupon.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4"></div>
+				<div class="col-lg-4"></div>
 				<p class="col-sm-12 font-weight-bold mt-5">What is better than using a coupon to get a free item at your favorite fast food restaurant? Using the
 same coupon a second, third, or twenty-third time! With those old coupon books, once you used the
 coupon it was gone. Not so with the MyEats® app. Your MyEats® app has an expiration date of one
@@ -231,31 +236,31 @@ your MyEats® app today.
 		</div>
 	</div>
 
-	<div id="faq" class="container py-5">
-		<div class="row text-dark text-center">
+	<div id="faq" class="container py-5 text-dark">
+		<div class="row text-center">
 			<h2 class="col-sm-12 display-4 font-weight-bold mb-4">Frequently asked questions:</h2>
 		</div>
 		<div id="accordion" role="tablist" aria-multiselectable="true">
-		  <div class="card">
+		  <div class="card bg-light-blue">
 		    <div class="card-header" role="tab" id="headingOne">
 		      <h5 class="mb-0">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-		          Collapsible Group Item #1
+		          How does it all work?
 		        </a>
 		      </h5>
 		    </div>
 
 		    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="card-block">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        We create a personal landing page that is unique to every school or organization. This allows you to add a personalized message, clearly explaining your mission for the campaign.
 		      </div>
 		    </div>
 		  </div>
-		  <div class="card">
+		  <div class="card bg-light-blue">
 		    <div class="card-header" role="tab" id="headingTwo">
 		      <h5 class="mb-0">
 		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		          Collapsible Group Item #2
+		          It sounds pretty high tech!
 		        </a>
 		      </h5>
 		    </div>
@@ -265,11 +270,11 @@ your MyEats® app today.
 		      </div>
 		    </div>
 		  </div>
-		  <div class="card">
+		  <div class="card bg-light-blue">
 		    <div class="card-header" role="tab" id="headingThree">
 		      <h5 class="mb-0">
 		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		          Collapsible Group Item #3
+		          What do the students/participants do?
 		        </a>
 		      </h5>
 		    </div>
@@ -279,9 +284,81 @@ your MyEats® app today.
 		      </div>
 		    </div>
 		  </div>
+		  <div class="card bg-light-blue">
+		    <div class="card-header" role="tab" id="headingFour">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		          This seems a little too simple.
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+		      <div class="card-block">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card bg-light-blue">
+		    <div class="card-header" role="tab" id="headingFive">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		          How long does the fundraiser last?
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+		      <div class="card-block">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card bg-light-blue">
+		    <div class="card-header" role="tab" id="headingSix">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+		          What payment options are available?
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+		      <div class="card-block">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card bg-light-blue">
+		    <div class="card-header" role="tab" id="headingSeven">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+		          How will the charge appear on my bill?
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+		      <div class="card-block">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card bg-light-blue">
+		    <div class="card-header" role="tab" id="headingEight">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+		          How quickly does our group receive its money?
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+		      <div class="card-block">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
 		</div>
 
 	</div>
+
+	<hr>
 
 	<div id="charities" class="container py-5">
 		<div class="row text-dark text-center">
@@ -342,10 +419,15 @@ your MyEats® app today.
 			</div>
 		</div>	
 	</footer>
-<!--
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
--->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<script>
+		
+
+	</script>
+
 </body>
 </html>

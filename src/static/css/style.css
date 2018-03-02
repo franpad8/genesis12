@@ -1,7 +1,7 @@
 :root {
 	--blue: rgb(0, 113, 188);
 	--dark: rgb(82, 86, 89);
-	--light-green: rgb(178, 217, 244);
+	--light-blue: rgb(178, 217, 244);
 	--dark-blue: rgb(28, 43, 124);
 }
 
@@ -14,10 +14,48 @@
 body {
 	font-size: 16px;
 	background-color: white;
+	overflow-x: hidden;
 }
 
 header {
 	background-color: inherit;
+}
+
+
+/* Specific Styles */
+
+#accordion .card-header > h5 > a,
+#accordion .card-header > h5 > a:hover {
+	text-decoration: none;
+}
+
+#accordion .card-header > h5 > a {
+	color: var(--dark);
+	padding-left: 2rem;
+}
+
+#accordion .card-header > h5 > a:before {
+	content: '\f463';
+	font-family: "Ionicons";
+	font-size: 2rem;
+	height: 30px;
+	left: 1rem;
+	top: .3rem;
+	position: absolute;
+	width: 30px;
+	color: var(--dark-blue);
+}
+
+#accordion .card-header > h5 > a.collapsed:before{
+	content: '\f48a';
+}
+
+#accordion .card-block {
+    padding: .5rem 2em .5rem 3.3rem;
+}
+
+#accordion .card {
+	margin-bottom: 1.3rem;
 }
 
 #banner {
@@ -26,8 +64,12 @@ header {
 	height: 92.2vh;
 }
 
+#banner .btn {
+	white-space: normal;
+}
+
 #president {
-	background-color: var(--light-green);
+	background-color: var(--light-blue);
 }
 
 #questions .list-group,
@@ -39,15 +81,17 @@ header {
 #guidelines .list-group li {
 	position: relative;
 	margin-bottom: 15px;
+	padding-left: 2rem;
 }
 
 #questions .list-group li:before,
 #guidelines .list-group li:before {
-	background-color: var(--light-green);
+	background-color: var(--light-blue);
 	border-radius: 18px;
 	content: "";
 	height: 30px;
-	left: -45px;
+	left: -0.5rem;
+	top: .5rem;
 	position: absolute;
 	width: 30px;
 	
@@ -56,18 +100,23 @@ header {
 #guidelines .list-group li:before {
 	height: 20px;
 	width: 20px;
-	left: -30px;
-	top: 5px;
+	left: -0.1rem;
+	top: .2rem;
 }
 
 
-/* New Styles */
+/* New Utilities Styles */
+
 .btn.btn-rounded-md {
 	border-radius: 25px;
 }
 
 .bg-dark-blue {
 	background-color: var(--dark-blue);
+}
+
+.bg-light-blue {
+	background-color: var(--light-blue);
 }
 
 /* Bootstrap Overrides */
